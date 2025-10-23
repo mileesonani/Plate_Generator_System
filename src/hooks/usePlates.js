@@ -4,10 +4,14 @@ import {
     FIRST_PLATE,
     MAX_PLATES,
     MIN_PLATES,
-    MOTIF_IMAGE_URL
+    // MOTIF_IMAGE_URL
 } from "../../constants"
+import motifImage from '../assets/Image/Image.jpg';
 
 const LOCAL_STORAGE_KEY = "plateGeneratorConfig_v2"
+
+export const MOTIF_IMAGE_URL = motifImage;
+
 
 export const usePlates = () => {
     const [plates, setPlates] = useState([])
@@ -20,7 +24,6 @@ export const usePlates = () => {
             const storedConfig = window.localStorage.getItem(LOCAL_STORAGE_KEY)
             if (storedConfig) {
                 const config = JSON.parse(storedConfig)
-                console.log('config', config)
                 if (config.plates && config.plates.length > 0) {
                     setPlates(config.plates)
                     setUnit(config.unit || "cm")

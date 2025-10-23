@@ -75,7 +75,7 @@ const DimensionInput = ({ label, unit, value, minCm, maxCm, onChange }) => {
     }
 
     const ringColor = error ? "ring-red-500" : "focus:ring-blue-500"
-    console.log('minCm, maxCm', minCm, maxCm)
+
     return (
         <div>
             <label className="block text-sm font-medium text-gray-700 mb-1" style={{ display: "flex", flexDirection: "row", flexWrap: "nowrap", justifyContent: "space-between", alignItems: "center" }}>
