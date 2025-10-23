@@ -1,4 +1,4 @@
-export const MOTIF_IMAGE_URL = 'assets/image/Image.webp';
+export const MOTIF_IMAGE_URL = './public/assets/image/Image.webp';
 export const MOTIF_BASE_WIDTH = 300; // cm
 
 export const MIN_PLATES = 1;
