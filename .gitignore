@@ -1,11 +1,19 @@
-# Ignore all .log files
-*.log
-# Ignore node_modules directory
+# Dependencies
 node_modules/
-# Ignore all .env files
-env
-# Ignore specific file
-config/settings.json
-# Ignore all files in a directory except one
-temp/*
-!temp/important.txt
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Production
+.next/
+out/
+dist/
+
+# Local env files
+.env*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
